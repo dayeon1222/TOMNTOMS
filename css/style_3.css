@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{margin:0; padding:0;}
+li{list-style: none}
+a{cursor:pointer;
+    text-decoration: none;}
+
+body,section,div,header,footer,ul,li,p,h1,h2,h3,h4,h5,h6,a,address,nav{font-family: 'Noto Sans KR', sans-serif;font-size: 14px; color: #222; font-style: normal; line-height: 1.6em;}
+
+
+#header{position: relative; height: 100px;}
+#header .header_inner{position: relative; width: 1200px;; margin: 0 auto; height: 100px;}
+#header .logo{ position: absolute; left: 0; top: 0;}
+#header .util{position: absolute; right: 0; top: 0;}
+#header .util ul{display: flex; }
+#header .util ul a{display: block; padding: 5px 10px; font-size: 13px;}
+#header .store{position: absolute; left: 50%; transform: translateX(-50%); border-bottom: 1px solid #000; top: 5px;}
+#header .gnb{position: absolute; bottom: 0; width: 100%}
+#header .gnb>ul{ display: flex; justify-content: space-between;}
+#header .gnb>ul>li>a:hover{color:#572a31; font-weight: bold; cursor: pointer;}
+#header .gnb>ul a{display: block; line-height: 50px;}
+
+#main{position: relative; width: 100%; margin: 0 auto;}
+.main_img>img{position: relative; margin:0 auto; width: 100%;}
+#main .menu_text h2{position:absolute; top:50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 60px; font-weight: bolder; z-index: 999;}
+/* #main .menu_text{position:absolute; top:50%; left: 50%; color: #fff; transform: translate(-40%, -50%); font-size: 60px; font-weight: bolder;} */
+
+#choose{position: relative; background-color: #c6c6c6; height: 100px; margin-top: -10px; width: 100%;}
+#choose .all{position: relative; width: 415px; height: 100px; margin-left: 535px;}
+#choose .all>span{position: absolute; top:40%; left: 45%;}
+#choose .all:hover{background-color: #572a31; color: #fff; cursor: pointer;}
+#choose .store{position: relative; width: 415px; height: 100px; margin-left:957px; margin-top: -100px;}
+#choose .store>span{position: absolute; top:40%; left: 45%;}
+#choose .store:hover{background-color: #572a31; color: #fff; cursor: pointer;}
+
+#event{position: relative; top:50px; left:900px; font-size: 36px; font-weight: bold; width: 1200px;}
+
+#search{border: 1px solid #c6c6c6; position: relative; width: 226px; height: 36px; float: right; margin-top: 90px; margin-right: 360px;}
+#search .te{position: absolute; left: 30px; top:5px; color: #c6c6c6;}
+#search img{position: absolute; right: 30px; top: 5px;}
+
+#content{position: relative; margin-top: 170px;}
+#content ul::after{content: ""; display: block; clear: both; }
+#content ul li{float: left; margin-top: 80px;}
+#content ul{display: flex; flex-wrap: wrap; margin-left: 360px;}
+#content ul>li{width: 28.888%;}
+#content ul>li>img{ display: block;}
+#content .image{border:1px solid #c6c6c6; width:273px;}
+#content .cal{color: #c6c6c6; font-size: 10px;}
+
+#sub{border-right: 1px solid #c6c6c6; border-left: 1px solid #c6c6c6; border-bottom: 1px solid #c6c6c6; width: 273px; position: relative;}
+#sub .ing>span{position: absolute; right: 30px; top:3px; width: 60px; text-align: center;}
+#sub .cal{margin-top: 5px;}
+#sub .sub_text{position: relative;}
+#sub .go{background-color: #572a31; color: #fff; border-radius: 20px;}
+#sub .end{background-color: #585858; color: #fff; border-radius: 20px;}
+
+#next{position: relative; margin-top: 100px; height: 100px;}
+#next ul::after{content: ""; display: block; clear: both;}
+#next ul li{float: left; text-align: center; margin: 50px;}
+#next ul{position: absolute; left: 37%; }
+#next ul li:hover {background-color: #572a31; border-radius: 50%; color: #fff; width: 20px; cursor: pointer;}
+
+
+#footer{position:relative; margin-top: 30px; background-color: #e6e6e6; height: 172px;}
+#footer .cu{font-size: 10px; font-weight: lighter; position: absolute; top:20%; left: 10%; color: #572a31;}
+#footer .tel{font-size: 14px; font-weight: lighter; color:#572a31; position: absolute; top:27%; left:10%; }
+#footer .me{font-size: 10px; font-weight: lighter; color: #572a31; position: absolute; top:18%; left:20%}
+#footer .add{font-size:10px; font-weight: lighter; position: absolute; top:70%; left:20% ; color: #585858;}
+#footer .phone{font-size: 10px; font-weight: lighter; position: absolute; top:77%; left:20% ; color: #585858;}
+#footer .sns_2{font-size: 10px; font-weight: lighter; color: #585858; position: absolute; left:70%; top:17%;}
+#footer >img{position: absolute; left:70%; top:30%;}

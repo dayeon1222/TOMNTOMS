@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{margin:0; padding:0;}
+li{list-style: none}
+a{cursor:pointer;
+    text-decoration: none;}
+
+body,section,div,header,footer,ul,li,p,h1,h2,h3,h4,h5,h6,a,address,nav{font-family: 'Noto Sans KR', sans-serif;font-size: 14px; color: #222; font-style: normal; line-height: 1.6em;}
+
+
+#header{position: relative; height: 100px; overflow: hidden; margin: 0 auto; width: 100%;}
+#header .header_inner{position: relative; width: 1200px;; margin: 0 auto; height: 100px;}
+#header .logo{ position: absolute; left: 0; top: 0;}
+#header .util{position: absolute; right: 0; top: 0;}
+#header .util ul{display: flex; }
+#header .util ul a{display: block; padding: 5px 10px; font-size: 13px;}
+#header .store{position: absolute; left: 50%; transform: translateX(-50%); border-bottom: 1px solid #000; top: 5px;}
+#header .gnb{position: absolute; bottom: 0; width: 100%}
+#header .gnb>ul{ display: flex; justify-content: space-between;}
+#header .gnb>ul>li>a:hover{color:#572a31; font-weight: bold; cursor: pointer;}
+#header .gnb>ul a{display: block; line-height: 50px;}
+
+#topBanner{position: relative; background-color: #fff28a; overflow: hidden; margin: 0 auto; width: 100%;}
+#topBanner>img{width: 50%;}
+#topBanner .letter{position: absolute; left: 50%; top: 50%; transform: translate(20%, -50%);}
+#topBanner .black{font-size: 48px}
+#topBanner .cold{font-size: 60px; font-weight: bold; line-height: 1em; margin-bottom: 50px;}
+#topBanner .cal{font-size: 25px}
+#topBanner .num{color: #fff; font-size: 25px;}
+#topBanner .ra{border-radius: 50px; text-align: center; background-color: #d6cb77; width: 103px; position: absolute; left:50%; bottom:2%;}
+
+
+#content1{position: relative; margin-top: 30px; width: 1200px; margin: 30px auto;}
+#content1 .menu{position:relative; margin: 30px auto; text-align: center;} 
+#content1 .ti{font-size: 20px; font-weight: bolder; padding: 5px;}
+#content1 .tle{font-size: 20px; font-weight: normal;}
+#content1 .cont1{position: relative; width: 1200px; margin: 0 auto; margin-top: 10px;}
+#content1 .cont1>ul::after{content: ""; display: block; clear: both; }
+#content1 .cont1>ul li{float: left; width: 33.33%;}
+
+#content1 .next{position: absolute;  right: 0; top: 2px; cursor: pointer; display: flex;}
+#content1 .next>ul{display: flex; margin-left: 30px;}
+#content1 .next>ul>li{width: 14px; height: 14px; background-color: #FFF; border-radius: 7px; margin: 3px; } 
+#content1 .next>ul>li{background-color: #c6c6c6;}
+#content1 .next>ul>li:hover{background-color:#572a31;}
+#contetn1 .numb{position: absolute; }
+#content1 .cont1 ul li{position: relative;}
+#content1 .cont1 .over_box{position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; opacity: 0; transition-duration: 0.5s;}
+#content1 .cont1 .over_box:hover{opacity: 1;}
+#content1 .cont1 .over_box h3{ font-size: 16px; color: #FFF; text-align: center; top: 50%; position: relative; margin-top: -30px;}
+#content1 .cont1 .over_box p{color: #FFF; text-align: center; position: relative; top: 50%; }
+
+#cont2{position: relative; margin-top:30px; overflow: hidden; width:100%;}
+#cont2 .letter_2{position: absolute; left: 50%; top: 50%; transform: translate(30%, -50%);}
+#cont2 .mon{font-size: 48px; color: #fff; font-weight: bolder;}
+#cont2 .cho{font-size: 68px; color: #fff; font-weight: bolder;}
+#cont2 .bo{border-radius: 30px; border: 1px solid #fff; height: 70x;}
+#cont2 .free{font-size: 25px; color: #fff; margin-left: 80px;}
+
+#content3 {position: relative; margin-top: 30px; width: 1200px; margin: 30px auto;}
+#content3 .md{position:relative; margin: 30px auto; text-align: center; font-size: 20px; font-weight: bolder;} 
+#content3 .cont3{position: relative; width: 1200px; margin: 0 auto; margin-top: 10px;}
+#content3 .cont3>ul::after{content: ""; display: block; clear: both; }
+#content3 .cont3>ul li{float: left; width: 33.33%;}
+#content3 .cont3 ul li{position: relative;}
+#content3 .cont3 .over_box{position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; opacity: 0; transition-duration: 0.5s;}
+#content3 .cont3 .over_box:hover{opacity: 1;}
+#content3 .cont3 .over_box h3{ font-size: 16px; color: #FFF; text-align: center; top: 50%; position: relative; margin-top: -30px;}
+#content3 .cont3 .over_box p{color: #FFF; text-align: center; position: relative; top: 50%; }
+#content3 .next_2{position: absolute;  right: 0; top: 2px; cursor: pointer; display: flex;}
+#content3 .next_2>ul{display: flex; margin-left: 30px;}
+#content3 .next_2>ul>li{width: 14px; height: 14px; background-color: #FFF; border-radius: 7px; margin: 3px; } 
+#content3 .next_2>ul>li{background-color: #c6c6c6;}
+#content3 .next_2>ul>li:hover{background-color:#572a31;}
+#contetn3 .numb_2{position: absolute; }
+
+#content4{position: relative; margin-top: 30px;}
+#content4 .sns{position: absolute; left: 45%; top:-15; font-size: 20px; font-weight: bolder;}
+#content4 .cont4{position: relative; width: 1200px; margin: 0 auto; margin-top: 10px;}
+#content3 .cont4>ul::after{content: ""; display: block; clear: both; }
+#content3 .cont4>ul li{float: left; }
+#content4 .sns4{display: flex; flex-wrap: wrap;}
+#content4 .sns4>li{width: 20%;}
+#content4 .sns4>li>img{width: 100%; display: block;}
+
+#footer{position:relative; margin-top: 30px; background-color: #e6e6e6; height: 172px;}
+#footer .cu{font-size: 10px; font-weight: lighter; position: absolute; top:20%; left: 10%; color: #572a31;}
+#footer .tel{font-size: 14px; font-weight: lighter; color:#572a31; position: absolute; top:27%; left:10%; }
+#footer .me{font-size: 10px; font-weight: lighter; color: #572a31; position: absolute; top:18%; left:20%}
+#footer .add{font-size:10px; font-weight: lighter; position: absolute; top:70%; left:20% ; color: #585858;}
+#footer .phone{font-size: 10px; font-weight: lighter; position: absolute; top:77%; left:20% ; color: #585858;}
+#footer .sns_2{font-size: 10px; font-weight: lighter; color: #585858; position: absolute; left:70%; top:17%;}
+#footer >img{position: absolute; left:70%; top:30%;}

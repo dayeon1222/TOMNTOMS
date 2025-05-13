@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{margin:0; padding:0;}
+li{list-style: none}
+a{cursor:pointer;
+    text-decoration: none;}
+
+body,section,div,header,footer,ul,li,p,h1,h2,h3,h4,h5,h6,a,address,nav{font-family: 'Noto Sans KR', sans-serif;font-size: 14px; color: #222; font-style: normal; line-height: 1.6em;}
+
+
+#header{position: relative; height: 100px;}
+#header .header_inner{position: relative; width: 1200px;; margin: 0 auto; height: 100px;}
+#header .logo{ position: absolute; left: 0; top: 0;}
+#header .util{position: absolute; right: 0; top: 0;}
+#header .util ul{display: flex; }
+#header .util ul a{display: block; padding: 5px 10px; font-size: 13px;}
+#header .store{position: absolute; left: 50%; transform: translateX(-50%); border-bottom: 1px solid #000; top: 5px;}
+#header .gnb{position: absolute; bottom: 0; width: 100%}
+#header .gnb>ul{ display: flex; justify-content: space-between;}
+#header .gnb>ul>li>a:hover{color:#572a31; font-weight: bold; cursor: pointer;}
+#header .gnb>ul a{display: block; line-height: 50px;}
+
+#main{position: relative; margin: 0 auto; overflow: hidden; width: 100%;}
+#main .menu_text{position:absolute; top:50%; left: 50%; color: #fff; transform: translate(-40%, -50%); font-size: 60px; font-weight: bolder;}
+
+#choose{position: relative; background-color: #c6c6c6; height: 100px; margin-top: -10px;}
+#choose .drink{position: relative; width: 415px; height: 100px; margin-left: 360px;}
+#choose .drink>span{position: absolute; top:40%; left: 45%;}
+#choose .drink:hover{background-color: #572a31; color: #fff; cursor: pointer;}
+#choose .side{position: relative; width: 415px; height: 100px; margin-left:775px; margin-top: -100px;}
+#choose .side>span{position: absolute; top:40%; left: 45%;}
+#choose .side:hover{background-color: #572a31; color: #fff; cursor: pointer;}
+#choose .md{position: relative; width: 415px; height: 100px; margin-left: 1190px; margin-top: -100px;}
+#choose .md>span{position: absolute; top:40%; left: 45%;}
+#choose .md:hover{background-color: #572a31; color: #fff; cursor: pointer;}
+
+#click{position: relative; background-color: #572a31; margin-top:100px; width: 1200px; margin-left: 360px;}
+#click .new{color: #fff; position: absolute; left:30px;}
+#click .coffee{color: #fff; position: absolute; left:250px;}
+#click .other{color: #fff; position: absolute; left:540px;}
+#click .go{color: #fff; position: relative; margin-left:1100px; cursor: pointer;}
+
+#popmenu{position: relative; border:1px solid #572a31; margin-top: 100px; width: 1200px; margin-left: 360px;}
+#popmenu .po_menu{color: #572a31; font-weight: bold; margin-left:15px; margin-top:10px;}
+#popmenu>img{position: relative; left: 10%;}
+#popmenu .int{color: #572a31; position: absolute; left: 350px; top: 90px; font-size: 20px; font-weight: bolder; }
+#popmenu .inc{color: #572a31; position: absolute; left: 350px; top:150px ;}
+#popmenu .in{color: #572a31; position: absolute; left:350px; top:180px;}
+#popmenu .one{color: #572a31; position: absolute; right: 230px; top:130px;}
+#popmenu .ta{position: absolute; right: 10px; bottom: 80px; border-top: 1px solid #572a31; color: #572a31; border-bottom: 1px solid #572a31; }
+
+#popmenu .tar{ background-color: #c6c6c6;}
+#popmenu .more{position: absolute; right: 30px; bottom: 10px; }
+#popmenu .more>a:hover{color: #572a31;}
+
+#menu{position: relative; margin-top: 50px;}
+#menu .search{position:absolute; left: 360px; color: #572a31;}
+#menu ul::after{content: ""; display: block; clear: both; }
+#menu ul li{float: left; margin-top: 80px;}
+#menu ul{display: flex; flex-wrap: wrap; margin-left: 360px;}
+#menu ul>li{width: 22.22%;}
+#menu ul>li>img{ display: block;}
+#menu .sub_ti{font-size: 10px; padding-left: 40px;}
+#menu .ma_ti{ display: inline-block; padding-right: 20px; padding-left: 40px;}
+#menu .new>span{background-color: #572a31; color: #fff; font-size: 10px; border-radius: 20px; text-align: center; position: absolute; width: 50px; }
+
+
+
+#next{position: relative; margin-top: 100px; height: 100px;}
+#next ul::after{content: ""; display: block; clear: both;}
+#next ul li{float: left; text-align: center; margin: 50px;}
+#next ul{position: absolute; left: 37%; }
+#next ul li:hover {background-color: #572a31; border-radius: 50%; color: #fff; width: 20px; cursor: pointer;}
+
+
+#footer{position:relative; margin-top: 30px; background-color: #e6e6e6; height: 172px;}
+#footer .cu{font-size: 10px; font-weight: lighter; position: absolute; top:20%; left: 10%; color: #572a31;}
+#footer .tel{font-size: 14px; font-weight: lighter; color:#572a31; position: absolute; top:27%; left:10%; }
+#footer .me{font-size: 10px; font-weight: lighter; color: #572a31; position: absolute; top:18%; left:20%}
+#footer .add{font-size:10px; font-weight: lighter; position: absolute; top:70%; left:20% ; color: #585858;}
+#footer .phone{font-size: 10px; font-weight: lighter; position: absolute; top:77%; left:20% ; color: #585858;}
+#footer .sns_2{font-size: 10px; font-weight: lighter; color: #585858; position: absolute; left:70%; top:17%;}
+#footer >img{position: absolute; left:70%; top:30%;}
